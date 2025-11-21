@@ -413,7 +413,7 @@ ode.func <- function(time, inits, params, custom.func){
     coef_kidney <- 1.451841e-01
     coef_heart <- 2.149089e-01
     coef_lung <- 1.566479e+03
-    coef_brain <- 0
+    coef_brain <- 1
     coef_rob <- 1.357213e-02
     coef_stomach <- 6.389196e-01
     coef_smallIn <- 8.734302e-02
@@ -429,7 +429,7 @@ ode.func <- function(time, inits, params, custom.func){
     coef_kidney <- 1.783479e-01
     coef_heart <- 2.563641e-01
     coef_lung <- 1.105172e+02
-    coef_brain <- 0
+    coef_brain <- 1
     coef_rob <- 3.740028e-06
     coef_stomach <- 1.710961e-02
     coef_smallIn <- 2.580722e+00
@@ -442,10 +442,10 @@ ode.func <- function(time, inits, params, custom.func){
   }else if (study == "study_6a"){
     coef_liver <- 1.093465e-01
     coef_spleen <- 3.138718e-01
-    coef_kidney <- 0
-    coef_heart <- 0
+    coef_kidney <- 1
+    coef_heart <- 1
     coef_lung <- 9.792661e+03
-    coef_brain <- 0
+    coef_brain <- 1
     coef_rob <- 1.453652e-01
     coef_stomach <- 1.731266e+00
     coef_smallIn <- 6.052005e-01
@@ -458,12 +458,12 @@ ode.func <- function(time, inits, params, custom.func){
   }else if (study == "study_6b"){
     coef_liver <- 1.477630e+00
     coef_spleen <- 4.832864e-01
-    coef_kidney <- 0
-    coef_heart <- 0
+    coef_kidney <- 1
+    coef_heart <- 1
     coef_lung <- 7.624179e+00
     coef_brain <- 2.487163e-01
     coef_rob <- 1.147408e+01
-    coef_stomach <- 0
+    coef_stomach <- 1
     coef_smallIn <- 5.990568e+00
     coef_largeIn <- 2.121434e+01
     CLurine <-0
@@ -634,7 +634,7 @@ admin.dose <- admin.dose_per_kg*BW*1e03 #ug PFOA
 admin.time <- 0 # time when doses are administered, in mins
 admin.type <- "iv"
 sex <- "M" 
-study <- "study_1"
+study <- "study_5b"
 
 user_input <- list('BW'=BW,
                    "admin.dose"= admin.dose,
